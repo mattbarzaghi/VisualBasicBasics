@@ -22,41 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnGo = New System.Windows.Forms.Button()
+        Me.btnHelloWorld = New System.Windows.Forms.Button()
         Me.btnVariables = New System.Windows.Forms.Button()
+        Me.btnDataTypes = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnGo
+        'btnHelloWorld
         '
-        Me.btnGo.Location = New System.Drawing.Point(12, 194)
-        Me.btnGo.Name = "btnGo"
-        Me.btnGo.Size = New System.Drawing.Size(492, 208)
-        Me.btnGo.TabIndex = 0
-        Me.btnGo.Text = "Go!"
-        Me.btnGo.UseVisualStyleBackColor = True
+        Me.btnHelloWorld.Location = New System.Drawing.Point(12, 10)
+        Me.btnHelloWorld.Name = "btnHelloWorld"
+        Me.btnHelloWorld.Size = New System.Drawing.Size(79, 30)
+        Me.btnHelloWorld.TabIndex = 0
+        Me.btnHelloWorld.Text = "Hello World"
+        Me.btnHelloWorld.UseVisualStyleBackColor = True
         '
         'btnVariables
         '
-        Me.btnVariables.Location = New System.Drawing.Point(12, 12)
+        Me.btnVariables.Location = New System.Drawing.Point(97, 11)
         Me.btnVariables.Name = "btnVariables"
-        Me.btnVariables.Size = New System.Drawing.Size(492, 176)
+        Me.btnVariables.Size = New System.Drawing.Size(73, 29)
         Me.btnVariables.TabIndex = 1
         Me.btnVariables.Text = "Variables"
         Me.btnVariables.UseVisualStyleBackColor = True
+        '
+        'btnDataTypes
+        '
+        Me.btnDataTypes.Location = New System.Drawing.Point(176, 10)
+        Me.btnDataTypes.Name = "btnDataTypes"
+        Me.btnDataTypes.Size = New System.Drawing.Size(75, 30)
+        Me.btnDataTypes.TabIndex = 2
+        Me.btnDataTypes.Text = "Data Types"
+        Me.btnDataTypes.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 413)
+        Me.Controls.Add(Me.btnDataTypes)
         Me.Controls.Add(Me.btnVariables)
-        Me.Controls.Add(Me.btnGo)
+        Me.Controls.Add(Me.btnHelloWorld)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btnGo As Button
+    Friend WithEvents btnHelloWorld As Button
     Friend WithEvents btnVariables As Button
+    Friend WithEvents btnDataTypes As Button
 End Class

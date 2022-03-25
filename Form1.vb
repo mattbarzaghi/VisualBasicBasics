@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGo.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHelloWorld.Click
 
         ' two ways to show messages
         MsgBox("Hello VB .NET")
@@ -22,6 +22,24 @@
         Dim surname As String = "Barzaghi"
 
         MessageBox.Show("Hello " & name & " " & surname & ", this is an example of string concatenation")
+
+    End Sub
+
+    Private Sub btnDataTypes_Click(sender As Object, e As EventArgs) Handles btnDataTypes.Click
+
+        ' declaring variables with different Data Type
+
+        Dim carModel As String = "Ford Focus"
+        Dim carDoors As Integer = 5
+        Dim carAvailable As Boolean = True
+        Dim carPrice As Decimal = "999.99"
+        Dim registrationDate As Date = #03/25/2022# '# are used as appendix ' 
+
+        MessageBox.Show(carModel & vbNewLine &
+                        carDoors & vbNewLine &
+                        carPrice & vbNewLine &
+                        carAvailable & vbNewLine &
+                        registrationDate)
 
     End Sub
 End Class
