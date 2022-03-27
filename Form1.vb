@@ -35,11 +35,27 @@
         Dim carPrice As Decimal = "999.99"
         Dim registrationDate As Date = #03/25/2022# '# are used as appendix ' 
 
-        MessageBox.Show(carModel & vbNewLine &
-                        carDoors & vbNewLine &
-                        carPrice & vbNewLine &
-                        carAvailable & vbNewLine &
+        MessageBox.Show(carModel & vbCrLf &
+                        carDoors & vbCrLf &
+                        carPrice & vbCrLf &
+                        carAvailable & vbCrLf &
                         registrationDate)
 
     End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+
+        Dim userName As String = txtName.Text
+        Dim userSurname As String = txtSurname.Text
+
+        MessageBox.Show("Welcome " & userName & " " & txtSurname.Text)
+        MessageBox.Show("You are " & listBoxProfession.Text)
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        MessageBox.Show("Hello welcome to a sample program that explores the basics of VB")
+        MessageBox.Show("Press OK to continue")
+    End Sub
+
 End Class
