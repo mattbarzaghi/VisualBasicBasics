@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnHelloWorld = New System.Windows.Forms.Button()
         Me.btnVariables = New System.Windows.Forms.Button()
@@ -32,6 +32,10 @@ Partial Class Form1
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.listBoxProfession = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.numberOneBox = New System.Windows.Forms.TextBox()
+        Me.numberTwoBox = New System.Windows.Forms.TextBox()
+        Me.btnSum = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnHelloWorld
@@ -121,11 +125,47 @@ Partial Class Form1
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Profession"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(212, 88)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(91, 15)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Math Operation"
+        '
+        'numberOneBox
+        '
+        Me.numberOneBox.Location = New System.Drawing.Point(309, 85)
+        Me.numberOneBox.Name = "numberOneBox"
+        Me.numberOneBox.Size = New System.Drawing.Size(100, 23)
+        Me.numberOneBox.TabIndex = 12
+        '
+        'numberTwoBox
+        '
+        Me.numberTwoBox.Location = New System.Drawing.Point(309, 114)
+        Me.numberTwoBox.Name = "numberTwoBox"
+        Me.numberTwoBox.Size = New System.Drawing.Size(100, 23)
+        Me.numberTwoBox.TabIndex = 13
+        '
+        'btnSum
+        '
+        Me.btnSum.Location = New System.Drawing.Point(434, 85)
+        Me.btnSum.Name = "btnSum"
+        Me.btnSum.Size = New System.Drawing.Size(62, 52)
+        Me.btnSum.TabIndex = 14
+        Me.btnSum.Text = "Sum"
+        Me.btnSum.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 413)
+        Me.Controls.Add(Me.btnSum)
+        Me.Controls.Add(Me.numberTwoBox)
+        Me.Controls.Add(Me.numberOneBox)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.listBoxProfession)
         Me.Controls.Add(Me.btnSubmit)
@@ -153,4 +193,8 @@ Partial Class Form1
     Friend WithEvents btnSubmit As Button
     Friend WithEvents listBoxProfession As ListBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents numberOneBox As TextBox
+    Friend WithEvents numberTwoBox As TextBox
+    Friend WithEvents btnSum As Button
 End Class

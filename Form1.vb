@@ -58,4 +58,13 @@
         MessageBox.Show("Press OK to continue")
     End Sub
 
+    Private Sub btnSum_Click(sender As Object, e As EventArgs) Handles btnSum.Click
+
+        Dim numberOne As Integer = numberOneBox.Text
+        Dim numberTwo As Integer = numberTwoBox.Text
+        Dim resultIs As Integer = numberOne + numberTwo
+
+        MessageBox.Show(resultIs)
+
+    End Sub
 End Class
