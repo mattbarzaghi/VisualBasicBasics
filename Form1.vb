@@ -67,4 +67,22 @@
         MessageBox.Show(resultIs)
 
     End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles textCountry.TextChanged
+
+        Dim stringCountry As String = textCountry.Text.ToUpper
+
+        'in line If
+        If stringCountry = "ITALY" Then MessageBox.Show("Hello it's a me Mario!")
+
+        'block If
+        If stringCountry = "AUSTRALIA" Then
+            MessageBox.Show("G'day Mate!")
+        End If
+
+    End Sub
 End Class

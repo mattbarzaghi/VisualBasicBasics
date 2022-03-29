@@ -36,6 +36,8 @@ Partial Class Form1
         Me.numberOneBox = New System.Windows.Forms.TextBox()
         Me.numberTwoBox = New System.Windows.Forms.TextBox()
         Me.btnSum = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.textCountry = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnHelloWorld
@@ -157,11 +159,29 @@ Partial Class Form1
         Me.btnSum.Text = "Sum"
         Me.btnSum.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 155)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(161, 15)
+        Me.Label3.TabIndex = 15
+        Me.Label3.Text = "Which country are you from?"
+        '
+        'textCountry
+        '
+        Me.textCountry.Location = New System.Drawing.Point(179, 152)
+        Me.textCountry.Name = "textCountry"
+        Me.textCountry.Size = New System.Drawing.Size(100, 23)
+        Me.textCountry.TabIndex = 16
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 413)
+        Me.Controls.Add(Me.textCountry)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnSum)
         Me.Controls.Add(Me.numberTwoBox)
         Me.Controls.Add(Me.numberOneBox)
@@ -197,4 +217,6 @@ Partial Class Form1
     Friend WithEvents numberOneBox As TextBox
     Friend WithEvents numberTwoBox As TextBox
     Friend WithEvents btnSum As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents textCountry As TextBox
 End Class
